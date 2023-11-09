@@ -1,0 +1,63 @@
+﻿@model EmployeeViewModel
+
+@inject IUnitOfWork _unitOfWork
+
+@{
+    var departments = new SelectList(_unitOfWork.DepartmentRepository.GetAll(), nameof(Department.Id), nameof(Department.Name));
+
+}
+
+<div class="form-group">
+    <label class="col-form-label">Image</label>
+    <input type="file" class="form-control-file" asp-for="Image" />
+</div>
+
+<div class="form-group">
+    <label class="col-form-lable" asp-for="Name"></label>
+    <input asp-for="Name" class="form-control" />
+    <span asp-validation-for="Name" class="text-danger"></span>
+
+</div>
+<div class="form-group">
+    <label class="col-form-lable" asp-for="Age"></label>
+    <input asp-for="Age" class="form-control" />
+    <span asp-validation-for="Age" class="text-danger"></span>
+
+</div>
+<div class="form-group">
+    <label class="col-form-lable" asp-for="Address"></label>
+    <input asp-for="Address" class="form-control" />
+    <span asp-validation-for="Age" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label class="col-form-lable" asp-for="Salary"></label>
+    <input asp-for="Salary" class="form-control" />
+    <span asp-validation-for="Salary" class="text-danger"></span>
+
+</div>
+<div class="form-check">
+    <input asp-for="IsActive" class="form-check-input" />
+    <label class="form-check-label" asp-for="IsActive"></label>
+</div>
+<div class="form-group">
+    <label class="col-form-lable" asp-for="Email"></label>
+    <input asp-for="Email" class="form-control" />
+    <span asp-validation-for="Email" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label class="col-form-lable" asp-for="PhoneNumber"></label>
+    <input asp-for="PhoneNumber" class="form-control" />
+    <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label class="col-form-lable" asp-for="HiringDate"></label>
+    <input asp-for="HiringDate" class="form-control" />
+</div>
+
+ <div class="form-group">
+     <label class="col-form-label" asp-for="Department"></label>
+     <select class="form-control" asp-for= "DepartmentId" asp-items="@departments">
+         <option value="@null"> -- Select Department -- </option>
+     </select>
+
+ </div>

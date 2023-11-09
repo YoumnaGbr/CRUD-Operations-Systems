@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.PL", "Demo.PL\Demo.PL.csproj", "{73C43CBB-04A6-4B37-9581-89D252F3D967}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.DAL", "Demo.DAL\Demo.DAL.csproj", "{EF784575-852F-4A24-989C-AC7ACC5AED8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.BLL", "Demo.BLL\Demo.BLL.csproj", "{F1AD3CDB-9D79-4ADC-AF27-20034C5E7AAA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73C43CBB-04A6-4B37-9581-89D252F3D967}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73C43CBB-04A6-4B37-9581-89D252F3D967}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73C43CBB-04A6-4B37-9581-89D252F3D967}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73C43CBB-04A6-4B37-9581-89D252F3D967}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF784575-852F-4A24-989C-AC7ACC5AED8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF784575-852F-4A24-989C-AC7ACC5AED8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF784575-852F-4A24-989C-AC7ACC5AED8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF784575-852F-4A24-989C-AC7ACC5AED8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1AD3CDB-9D79-4ADC-AF27-20034C5E7AAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1AD3CDB-9D79-4ADC-AF27-20034C5E7AAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1AD3CDB-9D79-4ADC-AF27-20034C5E7AAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1AD3CDB-9D79-4ADC-AF27-20034C5E7AAA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4DC36ACB-11C9-4479-BB3A-5711F7DCAD2F}
+	EndGlobalSection
+EndGlobal

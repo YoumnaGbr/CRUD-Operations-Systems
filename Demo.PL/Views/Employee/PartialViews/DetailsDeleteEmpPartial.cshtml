@@ -1,0 +1,44 @@
+﻿ @model EmployeeViewModel
+
+ <div>
+     <img src="~/files/images/@Model.ImageName" width="75" class="img-fluid rounded-circle" />
+ </div>
+
+<div class="form-group">
+    <label class="col-form-lable" asp-for="Name"></label>
+    <input asp-for="Name" class="form-control" readonly />
+
+</div>
+<div class="form-group">
+    <label class="col-form-lable" asp-for="Age"></label>
+    <input asp-for="Age" class="form-control" readonly />
+
+</div>
+<div class="form-group">
+    <label class="col-form-lable" asp-for="Address"></label>
+    <input asp-for="Address" class="form-control" readonly />
+
+</div>
+<div class="form-group">
+    <label class="col-form-lable" asp-for="Salary"></label>
+    <input asp-for="Salary" class="form-control" readonly />
+
+</div>
+<div class="form-check">
+    <input asp-for="IsActive" class="form-check-input" readonly />
+    <label class="form-check-label" asp-for="IsActive" ></label>   
+
+</div>
+<div class="form-group">
+    <label class="col-form-lable" asp-for="Email"></label>
+    <input asp-for="Email" class="form-control" readonly />
+
+</div>
+<div class="form-group">
+    <label class="col-form-lable" asp-for="PhoneNumber"></label>
+    <input asp-for="PhoneNumber" class="form-control" readonly />
+</div>
+<div class="form-group">
+    <label class="col-form-lable" asp-for="HiringDate"></label>
+    <input asp-for="HiringDate" class="form-control" readonly />
+</div>
