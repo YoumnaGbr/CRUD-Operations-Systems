@@ -39,11 +39,11 @@ dotnet run
 
 Open a web browser and navigate to http://localhost:5000 to access the application.
 
-**Usage
+## Usage
 - Use the web interface to create, read, update, and delete employees and departments.
 - The application provides a user-friendly interface for managing your data.
 
-**Folder Structure
+## Folder Structure
 Controllers: Contains the application's controllers.
 Models: Define the data models used in the project.
 Views: Store the views used for the web interface.
@@ -51,9 +51,9 @@ Data: Contains the database context and data access logic.
 Services: Define application services and business logic.
 wwwroot: Houses static files like CSS, JavaScript, and images.
 
-**Acknowledgments
+## Acknowledgments
 This project was inspired by the need for a simple CRUD system using ASP.NET Core MVC.
 Special thanks to Route Academy for their invaluable contributions.
 
-**Contact
+## Contact
 If you have any questions or need further assistance, feel free to contact the project maintainer at youmna.gabr97@gmail.com.
