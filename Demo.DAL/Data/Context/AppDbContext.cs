@@ -16,10 +16,10 @@ namespace Demo.DAL.Data.Context
         {
         }
 
-        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        //{
-        //    optionsBuilder.UseSqlServer("Server = .; Database = MVCApplication; Trusted_Connection = True");
-        //}
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer("Server = .; Database = MVCApplication; Trusted_Connection = True");
+        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

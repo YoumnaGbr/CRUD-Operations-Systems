@@ -2,7 +2,136 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<header>
+    <nav id='navbar'>
+        <div class="container">
+            <h1 class='logo'>HBT</h1>
+            <ul>
+                <li onclick="switchTab('home')"><a class='current' id='homeLink' href="#">Home</a></li>
+                <li onclick="switchTab('about')"><a id='aboutLink' href="#">About</a></li>
+                <li onclick="switchTab('contact')"><a id='contactLink' href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<section id="home">
+    <div id="showcase">
+        <div class="container">
+            <div class="showcase-content">
+                <h1><span class="text-primary">Enjoy</span> your stay</h1>
+                <p class='lead'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus in cum qui hic nemo veritatis.</p>
+                <a href="#" class="btn">About our hotel</a>
+            </div>
+        </div>
+    </div>
+    <section id="home-info" class='bg-dark'>
+        <div class="info-img">
+        </div>
+        <div class="info-content">
+            <h2><span class="text-primary">The History</span> Of Our Hotel</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea aperiam maxime magni at? Praesentium iure vitae accusantium dolorum sit fugiat delectus rem atque, provident ipsam exercitationem. Enim veniam dolores distinctio, laborum fugiat recusandae saepe possimus explicabo perferendis quae eaque nobis.</p>
+            <a href="#" class="btn btn-light">Read more</a>
+        </div>
+    </section>
+    <section id="features">
+        <div class="box bg-light">
+            <i class="fas fa-hotel fa-3x"></i>
+            <h3>Great Location</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum.</p>
+        </div>
+        <div class="box bg-primary">
+            <i class="fas fa-utensils fa-3x"></i>
+            <h3>Free meals</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, quo.</p>
+        </div>
+        <div class="box bg-light">
+            <i class="fas fa-dumbbell fa-3x"></i>
+            <h3>Fitness room</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, modi?</p>
+        </div>
+    </section>
+    <div class="clr"></div>
+</section>
+
+<section id="about" class="hidden">
+    <section id="about-info" class="bg-light py-3">
+        <div class="container">
+            <div class="info-left">
+                <h1 class="l-heading">
+                    <span class="text-primary">
+                        About
+                    </span> Hotel BT
+                </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis provident quod eius distinctio inventore sit deserunt sequi totam aliquam, consequatur, asperiores fugiat tempore atque, dolores earum? Ullam assumenda tempore qui?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, alias perspiciatis nostrum laboriosam numquam quam vitae saepe maiores illo dicta?</p>
+            </div>
+            <div class="info-right">
+                <img src="https://images.pexels.com/photos/262047/pexels-photo-262047.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+            </div>
+        </div>
+    </section>
+    <div class="clr"></div>
+    <section id="testimonials" class="py-3">
+        <div class="container">
+            <h2 class="l-heading">What our guests say</h2>
+            <div class="testimonial bg-primary">
+                <img src="https://images.pexels.com/photos/2889359/pexels-photo-2889359.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="John">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident officia qui repudiandae omnis porro suscipit mollitia sint error, dolor deserunt eaque at voluptatum, perspiciatis laborum facere laudantium sed repellendus ex, quos consequuntur reprehenderit quibusdam. Deleniti cumque pariatur omnis placeat. Alias!</p>
+            </div>
+            <div class="testimonial bg-primary">
+                <img src="https://images.pexels.com/photos/2899707/pexels-photo-2899707.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Samantha">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident officia qui repudiandae omnis porro suscipit mollitia sint error, dolor deserunt eaque at voluptatum, perspiciatis laborum facere laudantium sed repellendus ex, quos consequuntur reprehenderit quibusdam. Deleniti cumque pariatur omnis placeat. Alias!</p>
+            </div>
+        </div>
+    </section>
+</section>
+
+<section id="contact" class="hidden">
+    <section id="contact-form" class="py-3">
+        <div class="container">
+            <h1 class="l-heading">
+                <span class="text-primary">Contact</span> us
+            </h1>
+            <p>Please fill out the form below to contact us</p>
+            <form action="process.php">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section id="contact-info" class="bg-dark">
+        <div class="container">
+            <div class="box">
+                <i class="fas fa-hotel fa-3x"></i>
+                <h3>Location</h3>
+                <p>50 Main st, Boston MA</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-phone fa-3x"></i>
+                <h3>Phone Number</h3>
+                <p>(617) 555-5555</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-phone fa-3x"></i>
+                <h3>Email Adress</h3>
+                <p>frontend@hotelbt.co</p>
+            </div>
+        </div>
+    </section>
+</section>
+
+<footer id="main-footer">
+    <p>Hotel BT &copy; 2019, All rights reserved</p>
+</footer>

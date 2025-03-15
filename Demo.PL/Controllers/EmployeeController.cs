@@ -61,7 +61,8 @@ namespace Demo.PL.Controllers
                 ///    return RedirectToAction(nameof(Index));
                 ///} 
 
-                DocumentSettings.UploadFile(employeeVM.Image, "images");
+                var imageName = DocumentSettings.UploadFile(employeeVM.Image, "images");
+                employeeVM.ImageName = imageName;
 
                 var employee = _mapper.Map<EmployeeViewModel, Employee>(employeeVM);
 
